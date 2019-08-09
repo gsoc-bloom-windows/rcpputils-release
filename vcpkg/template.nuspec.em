@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-rcpputils</id>
-    <version>0.1.0</version>
-    <title>ros-dashing-rcpputils</title>
-    <authors>Emerson Knapp</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Package containing utility code for C++.
- Currently only Clang thread safety annotation macros</description>
+    <description>@(Description)</description>
     <dependencies>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
